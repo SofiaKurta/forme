@@ -24,3 +24,4 @@
 + [Создание ярлыков](http://www.linuxrussia.com/shortcut-ubuntu-sh.html)
 + Полная очистка корзины
 ```sudo rm -rf ~/.local/share/Trash/files/* ~/.local/share/Trash/info/*```
++ Отключение подтв. пароля для раблокировки вязки ключей: ```alt+f2 > seahorse > Gnome keyring > Unlock```

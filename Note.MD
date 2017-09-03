@@ -255,3 +255,84 @@ class CareerController extends Controller
     }
 }
 ```
+
+
+```
+version: '2'
+services:
+  nginx:
+      container_name: m2-nginx
+      image: jtsunne/nginx:latest
+      ports:
+       - "80:80"
+      volumes:
+       - ./nginx/nginx:/etc/nginx
+       - ../:/var/www/html
+       - ./logs/nginx/:/var/log/nginx
+      depends_on:
+              - php
+      networks:
+       - appnet
+  php:
+      container_name: m2-php
+      #image: jtsunne/php:latest
+      image: chialab/php:7.1-fpm
+      depends_on:
+              - db
+      volumes:
+       - ../:/var/www/html
+       - ./php/php.ini:/etc/php/7.1/fpm/php.ini
+      networks:
+       - appnet
+  db:
+      container_name: m2-db
+      image: mysql:5.7
+      environment:
+        MYSQL_ROOT_PASSWORD: hide
+        MYSQL_DATABASE: m2_db
+        MYSQL_USER: m2_user
+        MYSQL_PASSWORD: m2_super_passwd
+      volumes:
+       - "./dataDb:/var/lib/mysql"
+  #     - "./init_db:/docker-entrypoint-initdb.d"
+      networks:
+       - appnet
+      ports:
+       - "127.0.0.1:3466:3306"
+
+  apache2:
+     image: tutum/apache-php
+     container_name: m2_wp
+     environment:
+       - ALLOW_OVERRIDE=true
+     depends_on:
+       - mysql_wp
+     ports:
+       - 6180:80
+     networks:
+       - appnet
+     volumes:
+       - ./wp:/app
+  mysql_wp:
+      image: mysql:5.7.18
+      container_name: db_wp
+      environment:
+        MYSQL_ROOT_PASSWORD: hide
+        MYSQL_DATABASE: wordpress
+        MYSQL_USER: wp_user
+        MYSQL_PASSWORD: wp_super_passwd
+      volumes:
+             - "./dataDbWp:/var/lib/mysql"
+      networks:
+             - appnet
+      ports:
+             - "127.0.0.1:33307:3306"
+networks:
+  appnet:
+    driver: bridge
+    ipam:
+        driver: default
+        config:
+          - subnet: 172.58.238.0/24
+            gateway: 172.58.238.1
+```

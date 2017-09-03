@@ -336,3 +336,10 @@ networks:
           - subnet: 172.58.238.0/24
             gateway: 172.58.238.1
 ```
+
+```
+DirectoryIndex /club/index.php
+
+#Запрещаем просмотр содержимого папки
+Options All -Indexes
+```

@@ -116,3 +116,23 @@ To clear volumes:
 
 To clear networks:
 ```docker network rm $(docker network ls | tail -n+2 | awk '{if($2 !~ /bridge|none|host/){ print $1 }}')```
+
+
+###Подключка кастомного образа
+```
+wp:
+     build:
+       context: customDockerfiles/apache
+       dockerfile: Dockerfile
+     container_name: m2_wp
+     #environment:
+       #- ALLOW_OVERRIDE=false
+     depends_on:
+       - mysql_wp
+     ports:
+       - 6180:80
+     networks:
+       - appnet
+     volumes:
+       - ./wp:/var/www/html
+```

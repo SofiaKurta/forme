@@ -118,7 +118,7 @@ To clear networks:
 ```docker network rm $(docker network ls | tail -n+2 | awk '{if($2 !~ /bridge|none|host/){ print $1 }}')```
 
 
-###Подключка кастомного образа
+### Подключка кастомного образа
 ```
 wp:
      build:

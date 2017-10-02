@@ -3,7 +3,7 @@
 ```
 composer create-project --prefer-dist laravel/laravel
 cd laravel
-sudo chmod -R 777 storage/ bootstrap/ database/migrations/
+sudo chmod -Rf 777 storage/ bootstrap/ database/migrations/
 ```
 
 2. http://laraadmin.com/docs/1.0

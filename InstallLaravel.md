@@ -6,6 +6,5 @@ cd laravel
 sudo chmod -Rf 777 storage/ bootstrap/ database/migrations/
 ```
 
-2. http://laraadmin.com/docs/1.0
-3. https://github.com/roladn/laravelcrud/?utm_source=learninglaravel.net
-3.1 https://crudbooster.com/
+* http://laraadmin.com/docs/1.0
+* https://github.com/roladn/laravelcrud

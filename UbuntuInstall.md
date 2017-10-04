@@ -19,6 +19,14 @@
 + [Простая настройка Ubuntu 16.04 после установки](https://losst.ru/nastrojka-ubuntu-16-04-posle-ustanovki)
 + [Продвинутая настройка Ubuntu 16.04 после установки.](http://www.linuxrussia.com/things-to-do-after-installing-ubuntu-1604.html)
 + [Встановлення JDK на UBUNTU](https://www.digitalocean.com/community/tutorials/java-ubuntu-apt-get-ru)
+```
+cd /usr/local
+tar xzf <the file you just downloaded>
+As your normal user, add or change these two lines in your ~/.profile to point to the installation;
+
+export JAVA_HOME=/usr/local/jdk1.7.0_13
+export PATH=$PATH:$JAVA_HOME/bin
+```
 
 ## If you have problems with ubuntu:
 + [Создание ярлыков](http://www.linuxrussia.com/shortcut-ubuntu-sh.html)

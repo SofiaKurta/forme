@@ -18,18 +18,45 @@
 + [Linux Advanced Power Management в Ubuntu](http://forum.ubuntu.ru/index.php?topic=219057.0)
 + [Простая настройка Ubuntu 16.04 после установки](https://losst.ru/nastrojka-ubuntu-16-04-posle-ustanovki)
 + [Продвинутая настройка Ubuntu 16.04 после установки.](http://www.linuxrussia.com/things-to-do-after-installing-ubuntu-1604.html)
-+ [Встановлення JDK на UBUNTU](https://www.digitalocean.com/community/tutorials/java-ubuntu-apt-get-ru)
-```
-cd /usr/local
-tar xzf <the file you just downloaded>
-As your normal user, add or change these two lines in your ~/.profile to point to the installation;
-
-export JAVA_HOME=/usr/local/jdk1.7.0_13
-export PATH=$PATH:$JAVA_HOME/bin
-```
 
 ## If you have problems with ubuntu:
 + [Создание ярлыков](http://www.linuxrussia.com/shortcut-ubuntu-sh.html)
 + Полная очистка корзины
 ```sudo rm -rf ~/.local/share/Trash/files/* ~/.local/share/Trash/info/*```
 + Отключение подтв. пароля для раблокировки вязки ключей: ```alt+f2 > seahorse > Gnome keyring > Unlock```
+
+## Встановлення JDK та налаштування JAVA на Linux Ubuntu
+
+### Встановлення JDK
++ [Встановлення JDK на UBUNTU](https://www.digitalocean.com/community/tutorials/java-ubuntu-apt-get-ru)
++ ```sudo apt-get install openjdk-8-jre```
++ Ручний режим
+```
+cd /usr/local
+tar xzf <the file you just downloaded>
+As your normal user, add or change these two lines in your ~/.profile to point to the installation;
+
+sudo nano /etc/environment
+export JAVA_HOME=/usr/local/jdk1.7.0_13
+export PATH=$PATH:$JAVA_HOME/bin
+source /etc/environment #Застосувати нові зміни
+echo $JAVA_HOME #Перевірити чи відкривається шлях
+```
+
+
+### Запуск jar файлів без командної строки
++ Створюємо ярлик в папці ```/usr/share/applications``` з назвою ```java.desktop```
++ Вміст: (Exec - шлях прописуємо бінарніка java)
+```
+[Desktop Entry]
+Name=Java
+Comment=Java
+GenericName=Java
+Keywords=java
+Exec="/usr/lib/jdk1.8.0_144/jre/bin/java" -jar %f
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=application/x-java-archive
+StartupNotify=true
+```

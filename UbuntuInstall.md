@@ -18,6 +18,7 @@
 + [Linux Advanced Power Management в Ubuntu](http://forum.ubuntu.ru/index.php?topic=219057.0)
 + [Простая настройка Ubuntu 16.04 после установки](https://losst.ru/nastrojka-ubuntu-16-04-posle-ustanovki)
 + [Продвинутая настройка Ubuntu 16.04 после установки.](http://www.linuxrussia.com/things-to-do-after-installing-ubuntu-1604.html)
++ [Встановлення JDK на UBUNTU](https://www.digitalocean.com/community/tutorials/java-ubuntu-apt-get-ru)
 
 ## If you have problems with ubuntu:
 + [Создание ярлыков](http://www.linuxrussia.com/shortcut-ubuntu-sh.html)

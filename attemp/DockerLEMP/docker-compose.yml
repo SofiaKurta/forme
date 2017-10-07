@@ -33,6 +33,7 @@ services:
 		- "9000:9000"
 	    volumes:
 		- ./public:/usr/share/nginx/html
+		- ./php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 	mysql:
 	  image: mariadb
 	  environment:

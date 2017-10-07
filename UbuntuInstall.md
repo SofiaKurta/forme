@@ -60,3 +60,7 @@ Type=Application
 MimeType=application/x-java-archive
 StartupNotify=true
 ```
+
+### Пошук в командній строці
++ -type d | f
++ ```find / -type f -iname "filename*"```

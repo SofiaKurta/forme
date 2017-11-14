@@ -1,4 +1,5 @@
 ### How to install docker-compose
+[install docker](https://www.digitalocean.com/community/tutorials/docker-ubuntu-16-04-ru)
 ```
 sudo curl -o /usr/local/bin/docker-compose -L https://github.com/docker/compose/releases/download/1.11.1/docker-compose-`uname -s`-`uname -m`
 sudo chmod +x /usr/local/bin/docker-compose

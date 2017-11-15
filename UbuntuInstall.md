@@ -19,6 +19,13 @@
 + [Простая настройка Ubuntu 16.04 после установки](https://losst.ru/nastrojka-ubuntu-16-04-posle-ustanovki)
 + [Продвинутая настройка Ubuntu 16.04 после установки.](http://www.linuxrussia.com/things-to-do-after-installing-ubuntu-1604.html)
 
+## Удаление программ
+```
+sudo apt-get purge mysql*
+sudo apt-get autoremove
+sudo apt-get autoclean
+```
+
 ## If you have problems with ubuntu:
 + [Создание ярлыков](http://www.linuxrussia.com/shortcut-ubuntu-sh.html)
 + Полная очистка корзины

@@ -5,6 +5,7 @@ sudo curl -o /usr/local/bin/docker-compose -L https://github.com/docker/compose/
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose -v
 ```
+docker exec -it m2-db bash
 
 ### Cleaning docker(containers,images,volumes,networks)
 I have a helper function to nuke everything so that our Continuous blah, cycle can be tested, erm... continuously. Basically it boils down to the following:

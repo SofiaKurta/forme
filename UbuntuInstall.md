@@ -1,4 +1,7 @@
 ## After install Ubuntu
+
+Інсталятор *.deb GDebi package installer
+
 ### Step 1: The best programs
 [Список кращих програм](https://losst.ru/luchshie-programmy-dlya-ubuntu)
 + [СТАНДАРТНИЙ РЕПОЗИТОРІЙ ПРОГРАМ](https://en.uptodown.com/ubuntu)

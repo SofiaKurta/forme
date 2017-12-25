@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример: Расчет стоимости доставки.</title>
+    <meta charset="utf-8" />
+
+    <link href="calc.css" rel="stylesheet">
+
+    <script src="//yandex.st/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js" type="text/javascript"></script>
+    <script src="//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    <script src="multi-geocoder.js" type="text/javascript"></script>
+    <script src="delivery-calculator.js" type="text/javascript"></script>
+    <script src="directions-renderer.js" type="text/javascript"></script>
+    <script src="directions-service.js" type="text/javascript"></script>
+    <script src="delivery-tarif.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+function init() {
+    var myMap = window.map = new ymaps.Map('YMapsID', {
+            center: [55.751574, 37.573856],
+            zoom: 9,
+            behaviors: ['drag', 'scrollZoom']
+        }),
+        searchOrigin = new ymaps.control.SearchControl({
+            useMapBounds: true,
+            noCentering: true,
+            noPlacemark: true
+        }),
+        searchDestination = new ymaps.control.SearchControl({
+            useMapBounds: true,
+            noCentering: true,
+            noPlacemark: true
+        }),
+        tarifs = [{
+            id: 'moscow',
+            name: 'Москва',
+            label: 'Маршрут по Москве',
+            color: '#0000ff',
+            cost: 20,
+            url: 'moscow.json'
+        }, {
+            id: 'mo',
+            name: 'Московская область',
+            label: 'Маршрут за МКАД',
+            cost: 40,
+            color: '#ff0000',
+            url: 'mo.json'
+        }],
+        calculator = new DeliveryCalculator(myMap, 'Москва, Льва Толстого 18', tarifs);
+
+    myMap.controls.add(searchOrigin, { right: 5, top: 5 });
+    myMap.controls.add(searchDestination, { right: 5, top: 45 });
+
+    searchOrigin.events.add('resultselect', function (e) {
+        var results = searchOrigin.getResultsArray(),
+            selected = e.get('resultIndex'),
+            point = results[selected].geometry.getCoordinates();
+
+            calculator.setOrigin(point);
+    });
+
+    searchDestination.events.add('resultselect', function (e) {
+        var results = searchDestination.getResultsArray(),
+            selected = e.get('resultIndex'),
+            point = results[selected].geometry.getCoordinates();
+
+            calculator.setDestination(point);
+    });
+
+    myMap.events.add('click', function (e) {
+        var position = e.get('coordPosition');
+
+        if(calculator.getOrigin()) {
+            calculator.setDestination(position);
+        }
+        else {
+            calculator.setOrigin(position);
+        }
+    });
+}
+
+ymaps.ready(init);
+
+</script>
+    <style type="text/css">
+        #YMapsID {
+            width: 800px;
+            height: 520px;
+        }
+        .hero-unit {
+            background-color: #FFF;
+        }
+        .well {
+            padding: 15px 0;
+            height: 520px;
+        }
+        .label {
+            cursor: pointer;
+        }
+        #sidebar {
+			width: 600px;
+            height: 320px;
+            overflow: scroll;
+        }
+       .table tbody tr {
+            cursor: pointer;
+        }
+    </style>
+    <!-- Шаблон содержимого сайдбара. -->
+    <script id="sidebarTemplate" type="text/x-jquery-tmpl">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Тариф</th>
+                    <th>Довжина маршруту</th>
+                    <th>Вартість поїздки</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{each(i, tarif) results}}
+                {{tmpl({
+                    i: i,
+                    tarif: tarif
+                }, {
+                    formatter: $item.formatter
+                }) "#rowTemplate"}}
+            {{/each}}
+            </tbody>
+        </table>
+    </script>
+    <!-- Шаблон тарифа в таблице. -->
+    <script id="rowTemplate" type="text/x-jquery-tmpl">
+        <tr id="${tarif.id}">
+            <td>${tarif.name}</td>
+            <td>${$item.formatter.distance(tarif.distance)}</td>
+            <td>${tarif.value} грн</td>
+        </tr>
+    </script>
+</head>
+<body>
+    <div class="hero-unit">
+		<p>Расчет стоимости доставки.</p>
+		<div id="YMapsID"></div>
+		<div id="sidebar"></div>
+    </div>
+</body>
+</html>

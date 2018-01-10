@@ -1,8 +1,9 @@
 ## After install Ubuntu
 
-#### Установщик пакетів: ```sudo apt-get install gdebi```
+#### Обов'язкове: 
++ Інсталятор *.deb GDebi package installer ```sudo apt-get install gdebi```
++ Установить Midnight Commander: ```sudo apt-get install mc``` Открыть Midnight Commander командой: ```mc```.
 
-Інсталятор *.deb GDebi package installer
 
 ### Step 1: The best programs
 [Список кращих програм](https://losst.ru/luchshie-programmy-dlya-ubuntu)

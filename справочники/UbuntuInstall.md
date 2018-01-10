@@ -1,5 +1,7 @@
 ## After install Ubuntu
 
+#### Установщик пакетів: ```sudo apt-get install gdebi```
+
 Інсталятор *.deb GDebi package installer
 
 ### Step 1: The best programs

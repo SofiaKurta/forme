@@ -5,7 +5,7 @@ composer create-project --prefer-dist laravel/laravel
 cd laravel
 sudo chmod -Rf 777 storage/ bootstrap/ database/migrations/
 ```
-
+* [docker+laravel](https://medium.com/@shakyShane/laravel-docker-part-2-preparing-for-production-9c6a024e9797)
 * [стандартні локалізації](https://github.com/caouecs/Laravel-lang/tree/master/src "стандартні локалізації")
 * [адмінка](https://github.com/z-song/laravel-admin)
 * http://laraadmin.com/docs/1.0

@@ -1,4 +1,4 @@
-##Change and Update WordPress URLS in Database When Site is Moved to new Host
+### Change and Update WordPress URLS in Database When Site is Moved to new Host
 
 UPDATE wp_options SET option_value = replace(option_value, 'http://www.oldurl', 'http://www.newurl') WHERE option_name = 'home' OR option_name = 'siteurl';
 

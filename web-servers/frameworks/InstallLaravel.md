@@ -12,4 +12,5 @@ sudo chmod -Rf 777 storage/ bootstrap/ database/migrations/
 * https://github.com/roladn/laravelcrud
 
 Уроки:
++ [Чіти для Laravel](http://cheats.jesse-obrien.ca/)
 + [Quick Start with Laravel 5.5 + Vue.js: Simple CRUD Project](http://laraveldaily.com/quick-start-laravel-5-5-vue-js-simple-crud-project/)

@@ -1,0 +1,1 @@
++ [Емулятор андроїд для Ubuntu](https://www.linuxhelp.com/how-to-install-android-emulator-in-ubuntu-16-04/)

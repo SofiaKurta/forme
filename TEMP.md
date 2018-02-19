@@ -19,3 +19,4 @@ var somearr = ['bla1','bla2','bla3','bla4','bla5','bla6','bla7','bla8','bla9'];
     }
 ```
 http://dle-net.ru/index.php?newsid=803
+http://newtemplates.ru/food/

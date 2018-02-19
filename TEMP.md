@@ -18,4 +18,4 @@ var somearr = ['bla1','bla2','bla3','bla4','bla5','bla6','bla7','bla8','bla9'];
         console.log(arr);
     }
 ```
-https://ruseller.com/lessons.php?rub=43&id=934
+http://dle-net.ru/index.php?newsid=803

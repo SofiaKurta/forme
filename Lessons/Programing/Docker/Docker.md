@@ -22,3 +22,5 @@ To clear volumes:
 To clear networks:
 ```docker network rm $(docker network ls | tail -n+2 | awk '{if($2 !~ /bridge|none|host/){ print $1 }}')```
 
+### Включаем/Отключаем автозапуск контейнера
+```docker update --restart={no,on-failure,unless-stopped,always} container_name```

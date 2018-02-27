@@ -28,3 +28,11 @@ To clear networks:
 + ```on-failure``` - Restart the container if it exits due to an error, which manifests as a non-zero exit code.
 + ```unless-stopped``` - Restart the container unless it is explicitly stopped or Docker itself is stopped or restarted.
 + ```always``` - Always restart the container if it stops.
+
+### docker network create
+```docker network create \
+  --driver=bridge \
+  --subnet=172.28.0.0/16 \
+  --ip-range=172.28.5.0/24 \
+  --gateway=172.28.5.254 \
+  some_services```

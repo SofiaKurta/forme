@@ -12,6 +12,7 @@
 + [Foundation](https://foundation.zurb.com/)
 
 ### Різне
++ [Parallax.js](http://matthew.wagerfield.com/parallax/)
 + [Masonry - JavaScript grid layout](https://masonry.desandro.com/)
 + [typed.js - (емуляція написання тексту)](https://mattboldt.com/demos/typed-js/)
 + [autocomplete (автозаповнення)](https://jqueryui.com/autocomplete/)

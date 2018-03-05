@@ -16,13 +16,18 @@
 + [typed.js - (емуляція написання тексту)](https://mattboldt.com/demos/typed-js/)
 + [autocomplete (автозаповнення)](https://jqueryui.com/autocomplete/)
 + [Remodal](http://vodkabears.github.io/remodal/)
+
 + [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
 + [jquery ui sortable](https://jqueryui.com/sortable/)
+
 + [Каруселька](http://kenwheeler.github.io/slick/)
 + [Owlcarousel2](https://owlcarousel2.github.io/OwlCarousel2/)
+
 + [jQuery FocusPoint - (фокусировка на точке изобр.)](https://github.com/jonom/jquery-focuspoint)
 + [imgLiquid - (A jQuery Plugin to resize images to fit in a container.)](https://github.com/karacas/imgLiquid)
 + [cropperjs - обрізка фоток](https://fengyuanchen.github.io/cropperjs/)
+
++ [Tabulous JS](https://www.jquerycards.com/ui/filter-sort/tabulous-js/)
 + [Progress bar.JS](https://kimmobrunfeldt.github.io/progressbar.js/)
 + [Vegas – Backgrounds and Slideshows](https://github.com/jaysalvat/vegas)
 + [modern tooltips](http://iamceege.github.io/tooltipster/#demos)

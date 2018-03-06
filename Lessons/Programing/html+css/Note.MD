@@ -10,3 +10,5 @@
 + [Підбір кольорової схеми для сайту](http://paletton.com)
 + [иконки для сайтов (SVG,PNG,JPG)](http://www.iconsearch.ru/)
 + [Зал мастеров по WEB дизайну](http://web-silver.ru/forum/zal-masterov/)
+
++ [Анімація в CSS](http://css.yoksel.ru/css-animation/)

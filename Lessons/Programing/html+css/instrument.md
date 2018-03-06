@@ -49,3 +49,7 @@
 
 #### прікольні але платні
 + [cuteslider.js - (slider)](http://cuteslider.com/)
+
+
+### Класна менюшка
++ [менюшка](http://gearmobile.github.io/javascript/parallax-js/)

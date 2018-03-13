@@ -47,6 +47,9 @@
 
 +[jquery.vibrate.js](https://github.com/illyism/jquery.vibrate.js)
 
+### прікольні ефекти
++ [particles.js](https://vincentgarreau.com/particles.js/)
+
 #### прікольні але платні
 + [cuteslider.js - (slider)](http://cuteslider.com/)
 

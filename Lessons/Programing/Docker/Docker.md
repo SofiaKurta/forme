@@ -36,3 +36,8 @@ To clear networks:
   --ip-range=172.28.5.0/24 \
   --gateway=172.28.5.254 \
   some_services```
+  
+  
+  ```docker network ls``` подивитись список мереж \
+  ```docker network [NAME_SERVICE]``` видалити мережу
+  

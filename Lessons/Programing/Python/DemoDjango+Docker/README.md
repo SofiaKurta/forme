@@ -18,9 +18,9 @@ Blog post -> https://realpython.com/blog/python/django-development-with-docker-c
 1. Create migrations - `docker-compose run web /usr/local/bin/python manage.py migrate`
 1. Grab IP - `docker-machine ip dev` - and view in your browser
 
-##Issues
+## Issues
 
-###Admin CSS and static file links are broken
+### Admin CSS and static file links are broken
 
 I was able to fix this by doing the following:
 

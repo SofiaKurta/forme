@@ -35,11 +35,12 @@ docker-compose up -d
 docker-compose run web /usr/local/bin/python manage.py migrate
 run:
 
-docker-compose run web /usr/local/bin/python manage.py collectstatic --noinput
+```docker-compose run web /usr/local/bin/python manage.py collectstatic --noinput``` \
+\
 I also added
 
-  volumes:
-    - /usr/src/app/static
+  volumes:\
+    ```- /usr/src/app/static```\
 to production.yml so that it mounts a writeable volume that the static files created when working with the dev docker machine get copied to the production docker container (I don't think I fully understand this part yet).
 
 An entry like static/* probably ought to be added to .gitignore.

@@ -44,7 +44,7 @@ to production.yml so that it mounts a writeable volume that the static files cre
 
 An entry like static/* probably ought to be added to .gitignore.
 
-### if you get error: 403 Forbidden(/usr/src/app/static)
+### if you got the error: 403 Forbidden(/usr/src/app/static)
 1. docker exec -it web chmod -R 666 /usr/src/app
 1. docker exec -it web chmod -R 666 /usr/src/app/static
 or change user in nginx.conf to user root;

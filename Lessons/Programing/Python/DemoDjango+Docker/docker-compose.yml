@@ -2,7 +2,7 @@ version: '2'
 services:
   web:
     container_name: web
-    restart: always
+    #restart: always
     build: ./web
     expose:
       - "8000"
@@ -16,22 +16,23 @@ services:
       #- /usr/src/app/static
     env_file: .env
     environment:
-      DEBUG: 'true'
-    command: /usr/local/bin/gunicorn docker_django.wsgi:application -w 2 -b :8000
+      DEBUG: 'yes' #yes or no
+    command: /usr/local/bin/gunicorn project.wsgi:application -w 2 -b :8000
     networks:
       - appnet
 
   nginx:
     container_name: nginx
-    restart: always
+    #restart: always
     build: ./nginx/
     ports:
       - "80:80"
     volumes:
-      - /www/static
-      #- ./nginx/nginx:/etc/nginx
+      #- /www/static
+      - /usr/src/app/static
       - ./nginx/logs/:/var/log/nginx
-      - ./nginx/sites-enabled:/etc/nginx/sites-enabled
+      - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/conf/sites-enabled:/etc/nginx/sites-enabled
     volumes_from:
       - web
     links:
@@ -43,7 +44,7 @@ services:
 
   postgres:
     container_name: db
-    restart: always
+    #restart: always
     image: postgres:latest
     ports:
       - "5432:5432"
@@ -54,7 +55,7 @@ services:
 
   redis:
     container_name: redis
-    restart: always
+    #restart: always
     image: redis:latest
     ports:
       - "6379:6379"

@@ -77,3 +77,8 @@ StartupNotify=true
 ### Пошук в командній строці
 + -type d | f
 + ```find / -type f -iname "filename*"```
+
+### Disable Apport at Boot (Disable Error Reporting)
++ Stop Apport: ```sudo service apport stop```
++ Disable Apport at Boot: ```sudo nano /etc/default/apport```
++ Uninstall Apport: ```sudo apt-get purge apport```

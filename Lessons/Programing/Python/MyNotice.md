@@ -50,4 +50,31 @@ ddd = dict.fromkeys(['a', 'b'])  # створюємо ключі без знач
 dede = dict.fromkeys(['a', 'b'], 1)  # всім ключам буде призначено значення 1
 dada = {a: a ** 2 for a in range(7)}
 print(ddd)
+
+# множества
+df = set("hello")  # Множество в python - "контейнер", содержащий не повторяющиеся элементы в случайном порядке.
+dff = {'32', 23}
+af = {i ** 2 for i in range(10)}
+print(af)
+
+bf = frozenset("Qerty")
+# bf.add = (119)
+print(bf)
+
+x = 23
+print(x in dff)  # перевіряє чи є таке число
+
+ax = {23, 56, 32, 156, 90}
+xa = {32, 54, 47, 76, 13}
+print(ax.isdisjoint(xa))  # перевіряє чи пересікається хоть одне значення
+
+# ax.update(xa)  # об'єднює множини
+print(ax)
+
+# ax.intersection_update(xa)  # пересікання
+# ax.difference_update(xa)  # пересікання значень
+print(ax)
+
+ax.remove(444)  # не видалить і видасть помилку
+ax.discart(444)  # якщо знайде - видалить, інакше помилки не буде
 ```

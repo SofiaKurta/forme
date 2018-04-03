@@ -1,4 +1,4 @@
-def func(x):
+```def func(x):
     def add(a):
         return x + a
 
@@ -68,3 +68,4 @@ def show():
 # dec = decorator(show)
 
 show()
+```

@@ -27,7 +27,7 @@
 + [jQuery FocusPoint - (фокусировка на точке изобр.)](https://github.com/jonom/jquery-focuspoint)
 + [imgLiquid - (A jQuery Plugin to resize images to fit in a container.)](https://github.com/karacas/imgLiquid)
 + [cropperjs - обрізка фоток](https://fengyuanchen.github.io/cropperjs/)
-
++ [Pretty non-blocking notifications](https://github.com/CodeSeven/toastr)
 + [Tabulous JS](https://www.jquerycards.com/ui/filter-sort/tabulous-js/)
 + [Progress bar.JS](https://kimmobrunfeldt.github.io/progressbar.js/)
 + [Vegas – Backgrounds and Slideshows](https://github.com/jaysalvat/vegas)

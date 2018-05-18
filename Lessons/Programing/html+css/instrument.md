@@ -56,3 +56,6 @@
 
 ### Класна менюшка
 + [менюшка](http://gearmobile.github.io/javascript/parallax-js/)
+
+### Безкоштовні шаблони
++ [https://justfreetemplates.com](https://justfreetemplates.com)

@@ -23,6 +23,7 @@
 + [Linux Advanced Power Management в Ubuntu](http://forum.ubuntu.ru/index.php?topic=219057.0)
 + [Лучшие расширения для Gnome Shell](https://linuxthebest.net/luchshie-rasshireniya-dlya-gnome-shell/)
 + [Лучшие расширения для Gnome Shell2](https://losst.ru/luchshie-rasshireniya-gnome-3#1_Dash_to_Dock)
++ [Как устанавливать расширения для GNOME3](https://itsfoss.com/gnome-shell-extensions/)
 
 ## Удаление программ
 ```

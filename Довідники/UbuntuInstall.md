@@ -25,6 +25,11 @@
 + [Лучшие расширения для Gnome Shell2](https://losst.ru/luchshie-rasshireniya-gnome-3#1_Dash_to_Dock)
 + [Как устанавливать расширения для GNOME3](https://itsfoss.com/gnome-shell-extensions/)
 
+### Список розширень для GNOME3
++ [Minimize All Windows](https://extensions.gnome.org/extension/760/minimize-all/)
++ [TaskBar(optional)](https://extensions.gnome.org/extension/584/taskbar/)
++ [No Title Bar](https://extensions.gnome.org/extension/1267/no-title-bar/)
+
 ## Удаление программ
 ```
 sudo apt-get purge mysql*

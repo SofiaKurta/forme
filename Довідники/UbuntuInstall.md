@@ -29,6 +29,14 @@
 + [Minimize All Windows](https://extensions.gnome.org/extension/760/minimize-all/)
 + [TaskBar(optional)](https://extensions.gnome.org/extension/584/taskbar/)
 + [No Title Bar](https://extensions.gnome.org/extension/1267/no-title-bar/)
++ [Langswitcher](https://extensions.gnome.org/extension/733/langswitcher/)
+
+### делаем нормальную смену языка в ununtu 18.04 (GNOME3)
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['']" \
+(backup ) gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<CTRL>Shift_L']" \
+  или идем вручную: dconf-editor по пути org.gnome.desktop.wm.keybindings \
+  и в gnome tweak tool забиндить клавишу, например: CAPS LOCK или другое сочетание.
+  
 
 ## Удаление программ
 ```

@@ -4,6 +4,12 @@
 + Інсталятор *.deb GDebi package installer ```sudo apt-get install gdebi```
 + Установить Midnight Commander: ```sudo apt-get install mc``` Открыть Midnight Commander командой: ```mc```.
 
+### Встановлення відеодрайвера
+```
+sudo ubuntu-drivers devices
+sudo ubuntu-drivers autoinstall
+reboot
+```
 
 ### Step 1: The best programs
 [Список кращих програм](https://losst.ru/luchshie-programmy-dlya-ubuntu)

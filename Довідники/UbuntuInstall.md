@@ -38,9 +38,9 @@ reboot
 + [Langswitcher](https://extensions.gnome.org/extension/733/langswitcher/)
 
 ### делаем нормальную смену языка в ununtu 18.04 (GNOME3)
-gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['']" \
-(backup ) gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<CTRL>Shift_L']" \
-  или идем вручную: dconf-editor по пути org.gnome.desktop.wm.keybindings \
+```gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['']"``` \
+(backup ) ```gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<CTRL>Shift_L']"``` \
+  или идем вручную: ```dconf-editor по пути org.gnome.desktop.wm.keybindings``` \
   и в gnome tweak tool забиндить клавишу, например: CAPS LOCK или другое сочетание.
   
 

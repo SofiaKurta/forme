@@ -1,6 +1,0 @@
-+ [блог вчителя математики](http://nvr.esy.es/)
-+ [новокропивницька школа](http://nnvk.com.ua/)
-+ [радіо таксі 1552](http://drog1552.com.ua/)
-+ [avanti - візовий центр](http://avanti-vs.com/)
-+ [сайт музею Івана Франка](https://kamenyar.info/)
-+ [Варто - галицькі новини](https://vartonews.com.ua/)

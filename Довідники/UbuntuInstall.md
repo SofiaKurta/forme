@@ -10,6 +10,16 @@ sudo ubuntu-drivers devices
 sudo ubuntu-drivers autoinstall
 reboot
 ```
+### Programs for me:
++ PhpStorm
++ PyCharm
++ FileZilla
++ GPick
++ Gimp
++ StartApp
++ zealdocs.org
++ ThunderBird
+
 
 ### Step 1: The best programs
 [Список кращих програм](https://losst.ru/luchshie-programmy-dlya-ubuntu)

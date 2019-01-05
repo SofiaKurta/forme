@@ -16,7 +16,7 @@ print(some_func())
 def dcc(*args):  # передаємо у вигляді списку
     return args
 
-def ddc(**kwargs):  # передаємо у вигляді словаря
+def ddc(**kwargs):  # передаємо у вигляді кортежа
     return kwargs
 
 print(dcc(2, 1, 4))

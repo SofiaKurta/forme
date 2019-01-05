@@ -13,7 +13,7 @@ def some_func():
 print(some_func())
 
 # якщо к-сть параметрі не визначена
-def dcc(*args):  # передаємо у вигляді кортежа
+def dcc(*args):  # передаємо у вигляді списку
     return args
 
 def ddc(**kwargs):  # передаємо у вигляді словаря

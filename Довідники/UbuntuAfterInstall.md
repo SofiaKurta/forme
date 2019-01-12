@@ -1,7 +1,10 @@
-### Install mercurial
+### Install GIT
+```sudo apt-get install git```
+
+### Mercurial
 ```sudo apt-get install mercurial```
 
-### Install Docker
+### Docker
 ```sudo apt-get update```\
 ```sudo apt install apt-transport-https ca-certificates curl software-properties-common```\
 ```curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -```\
@@ -16,3 +19,14 @@ Executing the Docker Command Without Sudo \
 ```id -nG```\
 Install docker-compose\
 ```sudo apt install docker-compose```
+
+### Ruby
+```sudo apt-get install ruby-full```\
+Optional(install saas): ```sudo gem install sass```
+
+### NPM
+```sudo apt install npm```\
+```npm install -g less```
+
+### Composer 
+```sudo apt install composer```

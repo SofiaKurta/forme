@@ -26,7 +26,7 @@ Optional(install saas): ```sudo gem install sass```
 
 ### NPM
 ```sudo apt install npm```\
-```npm install -g less```
+Optional(install less): ```npm install -g less```
 
 ### Composer 
 ```sudo apt install composer```

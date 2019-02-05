@@ -36,3 +36,31 @@ Optional(install less): ```sudo npm install -g less```
 
 ### Composer 
 ```sudo apt install composer```
+
+### After Atom install (text editor) needs plugins
++ ```autocomplete-plus```
++ ```File-Icons```
++ ```OPEN RECENT```
++ ```TODO-SHOW```
++ ```MINIMAP```
++ ```HIGHLIGHT SELECTED```
++ ```AUTO-CLOSE HTML```
++ ```PIGMENTS```
++ ```LINTER```
++ ```atom-beautify```
++ ```emmet```
++ ```file-icons```
++ ```language-liquid```
++ ```Pane Layout Plus```
++ ```git-blame```
++ ```Git-Plus```
++ ```Auto-Update-Packages```
++ ```autocomplete-paths```
++ ```sync settings```
+Themes
++ ```darkula-ui```
++ ```atom-darcula-syntax```
++ ```intellij-darcula-syntax```
++ ```phpstorm-darcula-syntax```
++ ```dracula-syntax```
++ ```nord-atom-syntax```

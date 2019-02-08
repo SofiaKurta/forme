@@ -37,7 +37,40 @@ Optional(install less): ```sudo npm install -g less```
 ### Composer 
 ```sudo apt install composer```
 
-### After Atom install (text editor) needs plugins
+### Install Sublime text (text editor with plugins)
++ ```Package Control```
++ ```Darcula```
++ ```Emmet```
++ ```JavaScript & NodeJS Snippets```
++ ```Advanced New File```
++ ```Git```
++ ```GitGutter```
++ ```Side Bar Enhancements```
++ ```ColorPicker```
++ ```Placeholders```
++ ```DocBlockr```
++ ```SublimeCodeIntel```
++ ```Minify```
++ ```Minify on Save```
++ ```Sublime Linter```
++ ```Color Highlighter```
++ ```Alignment```
++ ```Auto Semi-Colon```
++ ```AutoFileName```
++ ```ApacheConf```
++ ```BracketHighlighter```
++ ```Case Conversion```
++ ```CSS Extended Completions```
++ ```HTML Nest Comments```
++ ```jQuery```
++ ```LESS```
++ ```SASS```
++ ```StyleToken```
++ ```RegReplace```
++ ```Linter```
++ ```SublimeLinter php```
+
+### Install Atom (text editor with plugins)
 + ```autocomplete-plus```
 + ```File-Icons```
 + ```OPEN RECENT```

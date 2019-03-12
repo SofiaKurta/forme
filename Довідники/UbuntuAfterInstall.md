@@ -32,7 +32,7 @@ Optional(install saas): ```sudo gem install sass```
 
 ### NPM
 ```sudo apt install npm```\
-Optional(install less): ```sudo npm install -g less```
+Optional(install less): ```sudo npm install -g less```\
 if exist problem with install npm or dependency packages then install packages with aptitude:
 + ```sudo apt install aptitude```
 + ```sudo aptitude install npm```

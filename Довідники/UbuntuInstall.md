@@ -19,6 +19,10 @@ reboot
 + StartApp
 + zealdocs.org
 + ThunderBird
++ PCManFM (FileManager)
++ Audacious (AudioPlayer)
++ VLC (VideoPlayer)
++ Simple Screen Recorder
 
 
 ### Step 1: The best programs

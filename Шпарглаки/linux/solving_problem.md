@@ -1,3 +1,7 @@
+### шлях до ярликів з програмами
++ /var/lib/snapd/desktop/applications
++ /usr/share/applications
+
 #### Enable Numlock, Tap to Click in Ubuntu 18.04 Login Screen
 ```sudo -i``` \
 ```xhost +SI:localuser:gdm``` \

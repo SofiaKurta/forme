@@ -92,19 +92,41 @@ NVIDIA NATIVE DRIVER \
 + Photoshop - топовий графічний редактор (як встановити читаємо тут)
 + zealdocs.org - офлайн документація.
 
-#### Enable Numlock, Tap to Click in Ubuntu 18.04 Login Screen
-```sudo -i``` \
-```xhost +SI:localuser:gdm``` \
-```su gdm -s /bin/bash``` \
-In this terminal, run command to enable numlock automatically in login screen: \
-```gsettings set org.gnome.settings-daemon.peripherals.keyboard numlock-state 'on'``` \
-To enable tap to click, run command in the same terminal: \
-```gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true```
-
-#### How to Hide Mounted Drives From the Left Dock in Ubuntu 19.10
-+ Hide: ```gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false```
-+ Show: ```gsettings reset org.gnome.shell.extensions.dash-to-dock show-mounts```
-
-#### Move the window control buttons to the left or right with dconf-editor
-```sudo apt-get install dconf-editor``` \
-path to options of location "close button" on window: ```org → gnome → desktop → wm → preferences```
+## For Dev
+##### Install GIT
+```sudo apt-get install git```
+##### CURL
+```sudo apt install curl```
+##### NODE.JS
+```curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -``` \
+```sudo apt install nodejs```
+##### Mercurial
+```sudo apt-get install mercurial```
+##### Docker
+```sudo apt-get update``` \
+```sudo apt install apt-transport-https ca-certificates curl software-properties-common``` \
+```curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -``` \
+```sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"``` \
+```sudo apt update``` \
+```apt-cache policy docker-ce``` \
+```sudo apt install docker-ce``` \
+```sudo systemctl status docker``` \
+Executing the Docker Command Without Sudo \
+```sudo usermod -aG docker ${USER}``` \
+```su - ${USER}``` \
+```id -nG``` \
+Install docker-compose \
+```sudo apt install docker-compose```
+##### Ruby
+```sudo apt-get install ruby-full```
+#Optional(install saas): \
+```sudo gem install sass```
+##### NPM
+```sudo apt install npm```
+Optional(install less): \
+```sudo npm install -g less``` \
+if exist problem with install npm or dependency packages then install packages with aptitude: \
+```sudo apt install aptitude``` \
+```sudo aptitude install npm```
+##### Composer
+```sudo apt install composer```

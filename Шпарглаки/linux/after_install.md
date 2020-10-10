@@ -118,11 +118,11 @@ Executing the Docker Command Without Sudo \
 Install docker-compose \
 ```sudo apt install docker-compose```
 ##### Ruby
-```sudo apt-get install ruby-full```
+```sudo apt-get install ruby-full``` \
 #Optional(install saas): \
 ```sudo gem install sass```
 ##### NPM
-```sudo apt install npm```
+```sudo apt install npm``` \
 Optional(install less): \
 ```sudo npm install -g less``` \
 if exist problem with install npm or dependency packages then install packages with aptitude: \

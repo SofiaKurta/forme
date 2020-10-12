@@ -38,6 +38,9 @@ NVIDIA NATIVE DRIVER \
 ```sudo add-apt-repository -y ppa:paulo-miguel-dias/pkppa``` \
 ```sudo apt update```
 
+перемикання між карточками \
+```nvidia-settings```
+
 ##### 7.Управління користувачами і групами
 ```sudo apt install -y gnome-system-tools```
 

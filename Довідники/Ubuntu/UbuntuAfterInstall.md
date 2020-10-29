@@ -175,6 +175,7 @@ Themes
 ##### NODE.JS
 ```curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -``` \
 ```sudo apt install nodejs```
+```sudo apt-get install autoconf libtool pkg-config nasm build-essential libpng16-dev```
 ##### Mercurial
 ```sudo apt-get install mercurial```
 ##### Docker

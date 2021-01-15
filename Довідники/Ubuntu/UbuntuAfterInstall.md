@@ -1,3 +1,8 @@
+#### GRUB loader
++ ```sudo grub-install /dev/sda``` || ```sudo grub2-install /dev/sda```
++ ```sudo grub-mkconfig -o /boot/grub/grub.cfg``` || ```sudo grub2-mkconfig -o /boot/grub2/grub.cfg```
++ ```sudo grub-install --root-directory=/mnt/USB/ /dev/sdb```
+
 ##### Інсталятор пакунків *.deb GDebi
 (в кого проблеми з звичайним інсталятором, виникають підвисання, виникнення неочікуваних помилок тощо...) \
 ```sudo apt-get install gdebi```

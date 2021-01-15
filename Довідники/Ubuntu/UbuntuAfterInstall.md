@@ -3,6 +3,14 @@
 + ```sudo grub-mkconfig -o /boot/grub/grub.cfg``` or ```sudo grub2-mkconfig -o /boot/grub2/grub.cfg```
 + ```sudo grub-install --root-directory=/mnt/USB/ /dev/sdb``` (optional. for a flash drive)
 
+#### Flash Player
+```sudo apt install adobe-flashplugin``` \
+We can also install a browser-plugin-freshplayer-pepperflash package by running: \
+```sudo apt-get -y install browser-plugin-freshplayer-pepperflash``` \
+Flash Player for Chromium users \
+```sudo update-pepperflashplugin-nonfree --install```
+```chrome://settings/content/flash```
+
 ##### Інсталятор пакунків *.deb GDebi
 (в кого проблеми з звичайним інсталятором, виникають підвисання, виникнення неочікуваних помилок тощо...) \
 ```sudo apt-get install gdebi```

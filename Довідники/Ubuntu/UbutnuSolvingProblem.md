@@ -1,6 +1,9 @@
 ### шлях до ярликів з програмами
 + /var/lib/snapd/desktop/applications
 + /usr/share/applications
+or \
++ sudo apt install --no-install-recommends gnome-panel
++ gnome-desktop-item-edit ~/ --create-new
 
 #### Примусове очищення кошика в Linux Ubuntu
 ```sudo rm -rf ~/.local/share/Trash/files/* ~/.local/share/Trash/info/*```

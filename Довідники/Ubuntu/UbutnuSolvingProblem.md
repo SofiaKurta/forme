@@ -17,6 +17,12 @@ In this terminal, run command to enable numlock automatically in login screen: \
 To enable tap to click, run command in the same terminal: \
 ```gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true```
 
+### делаем нормальную смену языка в ununtu 18.04 (GNOME3)
+```gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['']"``` \
+(backup ) ```gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<CTRL>Shift_L']"``` \
+  или идем вручную: ```dconf-editor по пути org.gnome.desktop.wm.keybindings``` \
+  и в gnome tweak tool забиндить клавишу, например: CAPS LOCK или другое сочетание.
+
 #### How to Hide Mounted Drives From the Left Dock in Ubuntu 19.10
 + Hide: ```gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false```
 + Show: ```gsettings reset org.gnome.shell.extensions.dash-to-dock show-mounts```

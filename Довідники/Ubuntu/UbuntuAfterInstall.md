@@ -109,76 +109,12 @@ NVIDIA NATIVE DRIVER \
 + PlayOnLinux - надстройка над Wine, дозволяє запускати програми з windows
 + Sublime text / Atom - текстові редактори (на вибір).
 
-або \
-```sudo snap install --edge viber-mtd```
-
 #### Список програм, які встановлюються вручну.
 + PhpStorm - середовище розробки для php. Також можете переглянути список корисних плагінів, які можуть стати Вам в пригоді.
 + PyCharm - середовище розробки python
 + WebStorm - зручний і розумний редактор для JavaSсript, HTML і CSS ...
 + Photoshop - топовий графічний редактор (як встановити читаємо тут)
 + zealdocs.org - офлайн документація.
-
-### Install Sublime text (text editor with plugins)
-+ ```Package Control```
-+ ```Darcula```
-+ ```Emmet```
-+ ```JavaScript & NodeJS Snippets```
-+ ```Advanced New File```
-+ ```Git```
-+ ```GitGutter```
-+ ```Side Bar Enhancements```
-+ ```ColorPicker```
-+ ```Placeholders```
-+ ```DocBlockr```
-+ ```SublimeCodeIntel```
-+ ```Minify```
-+ ```Minify on Save```
-+ ```Sublime Linter```
-+ ```Color Highlighter```
-+ ```Alignment```
-+ ```Auto Semi-Colon```
-+ ```AutoFileName```
-+ ```ApacheConf```
-+ ```BracketHighlighter```
-+ ```Case Conversion```
-+ ```CSS Extended Completions```
-+ ```HTML Nest Comments```
-+ ```jQuery```
-+ ```LESS```
-+ ```SASS```
-+ ```StyleToken```
-+ ```RegReplace```
-+ ```Linter```
-+ ```SublimeLinter php```
-
-### Install Atom (text editor with plugins)
-+ ```autocomplete-plus```
-+ ```File-Icons```
-+ ```OPEN RECENT```
-+ ```TODO-SHOW```
-+ ```MINIMAP```
-+ ```HIGHLIGHT SELECTED```
-+ ```AUTO-CLOSE HTML```
-+ ```PIGMENTS```
-+ ```LINTER```
-+ ```atom-beautify```
-+ ```emmet```
-+ ```file-icons```
-+ ```language-liquid```
-+ ```Pane Layout Plus```
-+ ```git-blame```
-+ ```Git-Plus```
-+ ```Auto-Update-Packages```
-+ ```autocomplete-paths```
-+ ```sync settings```
-Themes
-+ ```darkula-ui```
-+ ```atom-darcula-syntax```
-+ ```intellij-darcula-syntax```
-+ ```phpstorm-darcula-syntax```
-+ ```dracula-syntax```
-+ ```nord-atom-syntax```
 
 ## For Dev
 ##### Install GIT

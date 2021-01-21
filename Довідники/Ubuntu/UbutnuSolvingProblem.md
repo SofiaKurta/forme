@@ -1,3 +1,8 @@
+### Удаление программ
+```sudo apt-get purge mysql*``` mysql for example \
+```sudo apt-get autoremove``` \
+```sudo apt-get autoclean```
+
 ### шлях до ярликів з програмами
 + /var/lib/snapd/desktop/applications
 + /usr/share/applications \

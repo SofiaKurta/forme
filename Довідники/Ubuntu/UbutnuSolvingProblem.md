@@ -5,7 +5,7 @@
 
 ### шлях до ярликів з програмами
 + /var/lib/snapd/desktop/applications
-+ /usr/share/applications \
++ /usr/share/applications 
 + /home/${USERNAME}/.local/share/applications \
 or 
 + sudo apt install --no-install-recommends gnome-panel

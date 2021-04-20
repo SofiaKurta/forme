@@ -11,6 +11,13 @@ or
 + sudo apt install --no-install-recommends gnome-panel
 + gnome-desktop-item-edit ~/ --create-new
 
+#### Swap on/off
+```sudo nano /etc/fstab``` - manually. you need comment line "#/swapfile" \
+or \
+```sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab``` \
+or \
+```sudo sed -i '/ swap / s/^/#/' /etc/fstab```
+
 #### Примусове очищення кошика в Linux Ubuntu
 ```sudo rm -rf ~/.local/share/Trash/files/* ~/.local/share/Trash/info/*```
 

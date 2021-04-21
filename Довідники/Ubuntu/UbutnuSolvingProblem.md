@@ -18,6 +18,13 @@ or \
 or \
 ```sudo sed -i '/ swap / s/^/#/' /etc/fstab```
 
+#### Clear swap memory
+The default value for swappiness is 60; however, you can manually set it anywhere between 0-100. \
+Check your current swappiness: \
+```cat /proc/sys/vm/swappiness``` \
+Set new: \
+```sudo sysctl vm.swappiness=30```
+
 #### Примусове очищення кошика в Linux Ubuntu
 ```sudo rm -rf ~/.local/share/Trash/files/* ~/.local/share/Trash/info/*```
 

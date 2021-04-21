@@ -23,7 +23,10 @@ The default value for swappiness is 60; however, you can manually set it anywher
 Check your current swappiness: \
 ```cat /proc/sys/vm/swappiness``` \
 Set new: \
-```sudo sysctl vm.swappiness=30```
+```sudo sysctl vm.swappiness=30``` \
+To make this parameter persistent across reboots, append the following line to the \
+```sudo nano /etc/sysctl.conf``` \
+```vm.swappiness=10```
 
 #### Примусове очищення кошика в Linux Ubuntu
 ```sudo rm -rf ~/.local/share/Trash/files/* ~/.local/share/Trash/info/*```

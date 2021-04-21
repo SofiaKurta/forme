@@ -28,6 +28,25 @@ To make this parameter persistent across reboots, append the following line to t
 ```sudo nano /etc/sysctl.conf``` \
 ```vm.swappiness=10```
 
+#### Change swap size
+```sudo swapoff -a``` or ```sudo swapoff /swapfile && rm /swapfile``` \
+**if** = input file \
+**of** = output file \
+**bs** = block size \
+**count** = multiplier of blocks \
+Create new swap space of size 16 GB (16 * 1024 = 16384). bs is the block size. Basically bs * count = bytes to be allocated (in this case 16 GB). Here bs = 1M (M stands for mega, so we are assigning 1MB block size) and we are allocating 16384 * 1MB (=16GB) to swap. \
+```sudo dd if=/dev/zero of=/swapfile bs=1M count=16384``` \
+Give it the read/write permission for root \
+```sudo chmod 600 /swapfile``` \
+Format it to swap \
+```sudo mkswap /swapfile```
+Turn on swap again \
+```sudo swapon /swapfile```
+Edit /etc/fstab and add the new swapfile if it isn’t already there \
+```/swapfile none swap sw 0 0```
+Check the amount of swap available \
+```grep SwapTotal /proc/meminfo```
+
 #### Примусове очищення кошика в Linux Ubuntu
 ```sudo rm -rf ~/.local/share/Trash/files/* ~/.local/share/Trash/info/*```
 

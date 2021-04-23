@@ -29,7 +29,7 @@ To make this parameter persistent across reboots, append the following line to t
 ```vm.swappiness=10```
 
 #### Change swap size
-```sudo swapoff -a``` or ```sudo swapoff /swapfile && rm /swapfile``` \
+```sudo swapoff -a``` & ```sudo rm -f /swapfile``` \
 **if** = input file \
 **of** = output file \
 **bs** = block size \

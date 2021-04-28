@@ -76,3 +76,10 @@ path to options of location "close button" on window: ```org → gnome → deskt
 #### E: Sub-process /usr/bin/dpkg returned an error code (1)
 ```for file in $(LANG=C dpkg-divert --list | grep nvidia-340 | awk '{print $3}'); do sudo dpkg-divert --remove $file; done``` \
 ```sudo apt install --fix-broken```
+
+#### Проблемы воспроизведения гарнитуры Bluetooth
+Некоторые пользователи сообщают о больших задержках или даже отсутствии звука, когда по Bluetooth-соединению не передаются никакие данные. Это вызвано модулем ```module-suspend-on-idle```, который автоматически приостанавливает устройства ввода/вывода при простое. Так как это может вызвать проблемы с гарнитурой, можно отключить соответствующий модуль.
+
+Для отключения загрузки модуля module-suspend-on-idle закомментируйте следующую строчку в используемом файле конфигурации (```~/.config/pulse/default.pa``` или ```/etc/pulse/default.pa```): \
+```sudo nano /etc/pulse/default.pa``` \
+```#load-module module-suspend-on-idle```

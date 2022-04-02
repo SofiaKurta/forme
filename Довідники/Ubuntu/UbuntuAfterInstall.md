@@ -105,7 +105,7 @@ NVIDIA NATIVE DRIVER \
 + Simple Screen Recorder
 + FileZilla - багатоплатформний клієнт FTP
 + Gpick - колірна піпетка
-+ Gimp - графічний редактор (http://ports.ubuntu.com/pool/universe/g/gimp/gimp_2.8.22-1_arm64.deb)
++ Gimp - графічний редактор (http://archive.ubuntu.com/ubuntu/pool/universe/g/gimp/gimp_2.8.22-1_amd64.deb)
 + Audacious (AudioPlayer)
 + PCManFM (FileManager)
 + Telegram - месенджер  (автозавантаження команда telegram-desktop)

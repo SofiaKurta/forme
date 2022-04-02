@@ -85,6 +85,9 @@ NVIDIA NATIVE DRIVER \
 ```sudo apt-get install -y xterm``` \
 ```sudo apt install wine64 wine32```
 
+##### 12. KeepPssxc
+```sudo apt update && sudo apt install keepassxc```
+
 
 #### PRELOAD
 Встановлення PRELOAD - демон, який збирає інформацію про програми, які найбільш частіше використовуються, і кешуючий їх і, які вони вживали бібліотеки, що призводить до підвищення швидкості завантаження програм. Для установки потрібно просто виконати в терміналі. \

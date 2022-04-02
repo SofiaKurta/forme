@@ -3,6 +3,10 @@
 + ```sudo grub-mkconfig -o /boot/grub/grub.cfg``` or ```sudo grub2-mkconfig -o /boot/grub2/grub.cfg```
 + ```sudo grub-install --root-directory=/mnt/USB/ /dev/sdb``` (optional. for a flash drive)
 
+#### Install deb resolve dependencies
++ ```sudo dpkg -i /path/to/deb/file```
++ ```sudo apt-get install -f```
+
 #### Flash Player
 ```sudo apt install adobe-flashplugin``` \
 We can also install a browser-plugin-freshplayer-pepperflash package by running: \

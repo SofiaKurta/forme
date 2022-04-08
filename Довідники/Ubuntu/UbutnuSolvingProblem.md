@@ -83,3 +83,6 @@ path to options of location "close button" on window: ```org → gnome → deskt
 Для отключения загрузки модуля module-suspend-on-idle закомментируйте следующую строчку в используемом файле конфигурации (```~/.config/pulse/default.pa``` или ```/etc/pulse/default.pa```): \
 ```sudo nano /etc/pulse/default.pa``` \
 ```#load-module module-suspend-on-idle```
+
+#### PlayOnLinux Adobe Air requires a version that is not available
+```sudo apt-get install liblcms2-2:i386```

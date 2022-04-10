@@ -86,3 +86,6 @@ path to options of location "close button" on window: ```org → gnome → deskt
 
 #### PlayOnLinux Adobe Air requires a version that is not available
 ```sudo apt-get install liblcms2-2:i386```
+
+#### Read-only file system on a mounted disk with Windows
+To disable hibernation, type ```powercfg -h off``` at the command prompt and press Enter. This will disable this mode, delete the file hiberfil.sys from the hard drive, as well as disable the Windows 10 quick start option (which also uses this technology and does not work without hibernation).

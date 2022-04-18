@@ -153,6 +153,16 @@ Install docker-compose \
 ```sudo apt-get install ruby-full``` \
 #Optional(install saas): \
 ```sudo gem install sass```
+##### NVM (Node.js Version Manager)
+```curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh -o install_nvm.sh``` \
+```bash install_nvm.sh``` \
+`export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"` \
+```source ~/.bash_profile``` \
+```command -v nvm``` \
+Should return ```nvm``` \
+Example: ```nvm install --lts```
 ##### NPM
 ```sudo apt install npm``` \
 Optional(install less): \

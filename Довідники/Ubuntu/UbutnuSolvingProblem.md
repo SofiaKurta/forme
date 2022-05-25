@@ -89,3 +89,21 @@ path to options of location "close button" on window: ```org → gnome → deskt
 
 #### Read-only file system on a mounted disk with Windows
 To disable hibernation, type ```powercfg -h off``` at the command prompt and press Enter. Click on win+X in Windows 10 that open command prompt as administrator. This will disable this mode, delete the file hiberfil.sys from the hard drive, as well as disable the Windows 10 quick start option (which also uses this technology and does not work without hibernation).
+
+### fix the GPG error "NO_PUBKEY"
+1. To install it, first add the webupd8 repository for this program:
+
+```sudo add-apt-repository ppa:webupd8team/y-ppa-manager``` \
+
+2. Update your software list and install Y-PPA-Manager:
+
+```sudo apt-get update``` \
+```sudo apt-get install y-ppa-manager``` \
+
+3. Run y-ppa-manager (i.e. type ```y-ppa-manager``` then press enter key).
+
+4. When the main y-ppa-manager window appears, click on "Advanced."
+
+5. From the list of advanced tasks, select "Try to import all missing GPG keys" and click OK.
+
+You're done! As the warning dialog says when you start the operation, it may take quite a while (about 2 minutes for me) depending on how many PPA's you have and the speed of your connection.

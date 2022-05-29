@@ -107,3 +107,12 @@ To disable hibernation, type ```powercfg -h off``` at the command prompt and pre
 5. From the list of advanced tasks, select "Try to import all missing GPG keys" and click OK.
 
 You're done! As the warning dialog says when you start the operation, it may take quite a while (about 2 minutes for me) depending on how many PPA's you have and the speed of your connection.
+
+### Remove all bluetooth devices
+before run the script you need installing: ```sudo apt-get install bluez-tools```\
+#!/bin/bash
+```
+for device in $(bt-device -l | grep -o "[[:xdigit:]:]\{11,17\}"); do
+    echo "removing bluetooth device: $device | $(bt-device -r $device)"
+done
+```

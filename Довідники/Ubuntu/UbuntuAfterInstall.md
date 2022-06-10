@@ -1,3 +1,12 @@
+####  switching shortcut to alt+shift
+Set forward switch to Shift+Alt(left) \
+```gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Shift>Alt_L']"``` \
+Set backward switch to Alt+Shift(left) \
+```gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "['<Alt>Shift_L']"``` \
+To see the current setting value use get command: \
+```gsettings get org.gnome.desktop.wm.keybindings switch-input-source``` \
+```gsettings get org.gnome.desktop.wm.keybindings switch-input-source-backward```
+
 #### GRUB loader
 + ```sudo grub-install /dev/sda``` or ```sudo grub2-install /dev/sda```
 + ```sudo grub-mkconfig -o /boot/grub/grub.cfg``` or ```sudo grub2-mkconfig -o /boot/grub2/grub.cfg```

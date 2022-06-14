@@ -110,7 +110,8 @@ NVIDIA NATIVE DRIVER \
 #### Список розширень для GNOME3
 Рекомендую ставити розширення через браузер firefox (Gnome shell integration). Список рекомендованих доповнень (на сайті: https://extensions.gnome.org/) \
 ```sudo apt install gnome-tweaks``` \
-```sudo apt install -y chrome-gnome-shell```
+```sudo apt install -y chrome-gnome-shell``` \
+```sudo apt install gnome-shell-extensions```
 + Minimize All - Згорнути всі вікна в поточній робочій області
 + No Title Bar - переміщує назву вікна та кнопки на верхню панель
 

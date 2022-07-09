@@ -116,3 +116,10 @@ for device in $(bt-device -l | grep -o "[[:xdigit:]:]\{11,17\}"); do
     echo "removing bluetooth device: $device | $(bt-device -r $device)"
 done
 ```
+
+### "error broken count 0"
+```sudo apt-get install --fix-broken``` \
+```sudo apt-get update && sudo apt-get install -f && sudo apt-get update``` \
+or \
+```sudo rm /var/lib/apt/lists/* -vf``` \
+```sudo apt-get update```

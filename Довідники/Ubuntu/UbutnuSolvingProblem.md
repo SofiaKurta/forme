@@ -125,4 +125,4 @@ or \
 ```sudo apt-get update```
 
 ### Disable hot corner
-gsettings set org.gnome.desktop.interface enable-hot-corners false
+```gsettings set org.gnome.desktop.interface enable-hot-corners false```

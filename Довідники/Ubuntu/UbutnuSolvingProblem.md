@@ -123,3 +123,6 @@ done
 or \
 ```sudo rm /var/lib/apt/lists/* -vf``` \
 ```sudo apt-get update```
+
+### Disable hot corner
+gsettings set org.gnome.desktop.interface enable-hot-corners false

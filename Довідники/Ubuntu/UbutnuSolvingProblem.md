@@ -1,3 +1,18 @@
+### Solve Internet Connection Problem
+``` bash
+sudo nano /etc/resolv.conf
+```
+find the line with: ```#nameserver 127.0.0.53``` and comment it \
+put a new line of the following code:
+```
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+```
+then execute command:
+``` bash
+sudo service network-manager restart
+```
+
 ### Удаление программ
 ```sudo apt-get purge mysql*``` mysql for example \
 ```sudo apt-get autoremove``` \

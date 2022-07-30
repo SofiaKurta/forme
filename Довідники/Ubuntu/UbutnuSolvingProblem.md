@@ -10,7 +10,7 @@ nameserver 8.8.4.4
 ```
 then execute command:
 ``` bash
-sudo service network-manager restart
+service resolvconf restart
 ```
 
 ### Удаление программ

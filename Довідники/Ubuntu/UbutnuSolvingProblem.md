@@ -1,17 +1,43 @@
-### Solve Internet Connection Problem
+### Solve Internet Connection Problem (Use Resolvconf framework)
+On Ubuntu/Debian distros, you can install resolvconf framework by running the command below
 ``` bash
-sudo nano /etc/resolv.conf
+sudo apt install resolvconf
+sudo systemctl status resolvconf.service
 ```
-find the line with: ```#nameserver 127.0.0.53``` and comment it \
-put a new line of the following code:
+if resolveconf isn't running, enable then start it
+``` bash
+sudo systemctl enable resolvconf.service
+sudo systemctl start resolvconf.service
+sudo systemctl status resolvconf.service
 ```
+edit the head file
+``` bash
+sudo nano /etc/resolvconf/resolv.conf.d/head
+```
+enter your nameservers below the comments
+``` bash
 nameserver 8.8.8.8
 nameserver 8.8.4.4
 ```
-then execute command:
+update resolve.conf file
 ``` bash
-service resolvconf restart
+sudo resolvconf --enable-updates
+sudo resolvconf -u
 ```
+check if changes we successful
+``` bash
+sudo nano /etc/resolv.conf
+```
+**Best Free & Public DNS Servers**
+| Provider | Primary DNS | Secondary DNS |  
+|---|---|---|
+| Google | 8.8.8.8 | 8.8.4.4 |
+|Quad9 |	9.9.9.9 |	149.112.112.112|
+|OpenDNS Home	| 208.67.222.222 | 208.67.220.220 |
+|Cloudflare	| 1.1.1.1	| 1.0.0.1 |
+|CleanBrowsing	| 185.228.168.9	| 185.228.169.9 |
+|Alternate DNS	| 76.76.19.19	| 76.223.122.150 |
+|AdGuard DNS	| 94.140.14.14	| 94.140.15.15 |
 
 ### Удаление программ
 ```sudo apt-get purge mysql*``` mysql for example \

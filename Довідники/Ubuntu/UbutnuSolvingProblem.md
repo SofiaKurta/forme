@@ -167,3 +167,12 @@ or \
 
 ### Disable hot corner
 ```gsettings set org.gnome.desktop.interface enable-hot-corners false```
+
+### "You are using a non-X11 window system (e.g wayland)" in Simple Screen Recorder
+``` bash
+ls -l /etc/gdm3/
+sudo nano /etc/gdm3/custom.conf
+```
+and uncoment param: \
+```WaylandEnable=false``` \
+save & restart computer

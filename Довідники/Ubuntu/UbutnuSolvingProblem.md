@@ -176,3 +176,11 @@ sudo nano /etc/gdm3/custom.conf
 and uncoment param: \
 ```WaylandEnable=false``` \
 save & restart computer
+
+### ubuntu unable to update snap has no updates available
+``` bash
+sudo killall gnome-software
+sudo apt-get update
+sudo killall snap-store
+sudo snap refresh
+```

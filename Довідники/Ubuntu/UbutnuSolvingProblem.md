@@ -184,3 +184,6 @@ sudo apt-get update
 sudo killall snap-store
 sudo snap refresh
 ```
+
+### Photosho CS6 (requirements in wine)
+```winetricks atmlib gdiplus msxml3 msxml6 vcrun2005 vcrun2005sp1 vcrun2008 ie6 fontsmooth-rgb gecko```
